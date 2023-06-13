@@ -1,7 +1,7 @@
 # market-system
  
 # Video
-[YouTube] (https://www.youtube.com/watch?v=Jsf1iThwrnM&ab_channel=YusufKara%C3%A7olak)
+[YouTube](https://www.youtube.com/watch?v=Jsf1iThwrnM&ab_channel=YusufKara%C3%A7olak)
 
 ## Information:
 This is my first project with VUE JS and SCSS. I did this to learn VUE JS so the design is not very good :D
