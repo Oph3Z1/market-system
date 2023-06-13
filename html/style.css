@@ -1,0 +1,307 @@
+* {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.ui-screen {
+  background-color: rgba(0, 0, 0, 0.918);
+  width: 60vw;
+  height: 65vh;
+  position: absolute;
+  border-radius: 2vh;
+}
+
+.upbar {
+  width: 60vw;
+  height: 12vh;
+  border-top-right-radius: 2vh;
+  border-top-left-radius: 2vh;
+  top: 0;
+  position: absolute;
+}
+.upbar .market-name {
+  color: white;
+  left: 3vw;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vh;
+  position: absolute;
+}
+.upbar .upbars {
+  width: 20vw;
+  height: 4vh;
+  margin-left: 2vh;
+  border-radius: 10vh;
+  border: 1px solid gray;
+  justify-content: space-around;
+}
+.upbar .upbars p {
+  color: white;
+  float: left;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.upbar .line {
+  border: 1px solid gray;
+  width: 0.01vw;
+  height: 4vh;
+  position: absolute;
+  right: 25vh;
+}
+.upbar .closebar {
+  width: 7vw;
+  height: 4vh;
+  right: 4vw;
+  border-radius: 7vh;
+  border: 1px solid gray;
+  position: absolute;
+  cursor: pointer;
+}
+.upbar .closebar p {
+  position: absolute;
+  left: 1.6vw;
+  color: white;
+}
+.upbar .closebar i {
+  position: absolute;
+  right: 1vw;
+  color: red;
+  font-size: large;
+  width: 2vw;
+  height: 2vh;
+}
+
+.leftbar {
+  width: 40vw;
+  height: 50vh;
+  left: 2vw;
+  bottom: 2vh;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+}
+.leftbar .kutular {
+  width: 12vw;
+  height: 11vh;
+  float: left;
+  top: 0.5vw;
+  left: 1vw;
+  border-radius: 1vh;
+  border: 1px solid white;
+  margin-right: 0.5vw;
+  margin-bottom: 1vh;
+  position: relative;
+}
+.leftbar .kutular .solusticon {
+  top: 1vh;
+  right: 0.8vw;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+}
+.leftbar .kutular #muziconu {
+  width: 5vw;
+  height: 6.5vh;
+  position: absolute;
+}
+.leftbar .kutular #itemname {
+  color: white;
+  font-size: 1.5vh;
+  text-align: center;
+  top: -1vh;
+  position: absolute;
+}
+.leftbar .kutular #itemprice {
+  color: white;
+  font-size: 1.5vh;
+  text-align: center;
+  bottom: -1vh;
+  position: absolute;
+}
+
+.rightbar {
+  height: 40vh;
+  right: 2vw;
+  width: 17vw;
+  border-radius: 1vh;
+  top: 14vh;
+  border: 1px solid white;
+  position: absolute;
+}
+.rightbar .baslik {
+  border: 1px, solid, gray;
+  width: 14vw;
+  height: 8.4vh;
+  top: 0;
+  position: absolute;
+}
+.rightbar .baslik #hedaerbaslik {
+  color: rgb(165, 180, 23);
+  width: 8vw;
+  top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  left: -2.5vh;
+  height: 1vw;
+  font-size: 1.9vh;
+  position: absolute;
+}
+.rightbar .baslik #hedaerderayls {
+  color: gray;
+  left: -0.9vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2vh;
+  width: 15vw;
+  justify-content: flex-start;
+  text-align: left;
+  max-height: 4vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  bottom: -0.8vh;
+  position: absolute;
+}
+.rightbar .sepetdis {
+  width: 16vw;
+  height: 30vh;
+  bottom: 1vh;
+  display: block;
+  overflow-y: auto;
+  position: absolute;
+}
+.rightbar .sepetitems {
+  width: 15.9vw;
+  font-size: small;
+  height: 5vh;
+  left: 0;
+  top: 0;
+  position: relative;
+  margin-bottom: 1vh;
+  border: 1px solid gray;
+  border-radius: 0.8vh;
+}
+.rightbar .sepetitems #itemname {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2vh;
+  position: absolute;
+  left: 0.5vw;
+}
+.rightbar .sepetitems #sepetitemcount {
+  color: yellowgreen;
+  font-size: small;
+  margin-left: 0.5vw;
+}
+.rightbar .sepetitems #itempara {
+  color: green;
+  font-size: small;
+  margin-left: 0.6vw;
+}
+.rightbar .sepetitems #itemcountup {
+  background-color: transparent;
+  border: none;
+  font-size: 2vh;
+  position: absolute;
+  right: 3vw;
+  cursor: pointer;
+}
+.rightbar .sepetitems #itemcountup i {
+  color: white;
+}
+.rightbar .sepetitems #itemcountdown {
+  background-color: transparent;
+  border: none;
+  font-size: 2vh;
+  position: absolute;
+  right: 1vw;
+  cursor: pointer;
+}
+.rightbar .sepetitems #itemcountdown i {
+  color: white;
+}
+
+.totalmoney {
+  width: 16vw;
+  height: 3vh;
+  bottom: 8.1vh;
+  right: 4.3vh;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.7vh;
+  color: white;
+  position: absolute;
+}
+.totalmoney p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.totalmoney p span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-left: 0.5vw;
+}
+
+.bankcard {
+  position: absolute;
+  width: 4vw;
+  height: 3vh;
+  bottom: 4.3vh;
+  border: 1px solid white;
+  border-radius: 0.7vh;
+  right: 4vw;
+  cursor: pointer;
+  color: white;
+}
+
+.cash {
+  position: absolute;
+  width: 4vw;
+  height: 3vh;
+  bottom: 4.3vh;
+  border: 1px solid white;
+  border-radius: 0.7vh;
+  right: 13vw;
+  cursor: pointer;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}

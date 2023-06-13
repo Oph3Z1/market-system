@@ -1,0 +1,311 @@
+* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+::-webkit-scrollbar {
+    width: .1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  .ui-screen {
+    background-color: rgba(0, 0, 0, 0.918);
+    width: 60vw;
+    height: 65vh;
+    position: absolute;
+    border-radius: 2vh;
+  }
+  .upbar {
+    // background-color: red;
+    width: 60vw;
+    height: 12vh;
+    border-top-right-radius: 2vh;
+    border-top-left-radius: 2vh;
+    top: 0;
+    position: absolute;
+    .market-name {
+      color: white;
+      left: 3vw;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.5vh;
+      position: absolute;
+      
+    }
+    .upbars {
+       width: 20vw;
+       height: 4vh;
+       margin-left: 2vh;
+       border-radius: 10vh;
+       border: 1px solid gray;
+       justify-content: space-around;
+       p {
+        color: white;
+        float: left;
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+
+       }
+    }
+
+    .line{
+      border: 1px solid gray;
+      width: .01vw;
+      height: 4vh;
+      position: absolute;
+      right: 25vh;
+    }
+    .closebar {
+        width: 7vw;
+        height: 4vh;
+        right: 4vw;
+        border-radius: 7vh;
+        border: 1px solid gray;
+        position: absolute;
+        cursor: pointer;
+
+        p {
+          position: absolute;
+          left: 1.6vw;
+          color: white;
+        }
+        i {
+          position: absolute;
+          right: 1vw;
+          color: red;
+          font-size: large;
+          width: 2vw;
+          height: 2vh;
+
+        }
+    }
+  }
+  .leftbar {
+      // background-color: red;
+      width: 40vw;
+      height: 50vh;
+      left: 2vw;
+      bottom: 2vh;
+      display: block;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: absolute;
+      .kutular{
+        width: 12vw;
+        height: 11vh;
+        float: left;
+        top: .5vw;
+        left: 1vw;
+        border-radius: 1vh;
+        border: 1px solid white;
+        margin-right: .5vw;
+        margin-bottom: 1vh;
+        position: relative;
+         
+        .solusticon{
+          top: 1vh;
+          right: .8vw;
+          color: white;
+          position: absolute;
+          cursor: pointer;
+        }
+
+        #muziconu {
+          width: 5vw;
+          height: 6.5vh;
+          position: absolute;
+        }
+
+        #itemname {
+          color: white;
+          font-size: 1.5vh;
+          text-align: center;
+          top: -1vh;
+          position: absolute;
+        }
+
+        #itemprice {
+          color: white;
+          font-size: 1.5vh;
+          text-align: center;
+          bottom: -1vh;
+          position: absolute;
+        }
+      }
+    }
+
+    .rightbar{
+      // background: rgb(13, 61, 45);
+      height: 40vh;
+      right: 2vw;
+      width: 17vw;
+      border-radius: 1vh;
+      top: 14vh;
+      border: 1px solid white;
+      position: absolute;
+      .baslik{
+      border: 1px, solid, gray;
+      width: 14vw;
+      height: 8.4vh;
+      top: 0;
+      position: absolute;
+      #hedaerbaslik{
+        color: rgb(165, 180, 23);
+        width: 8vw;
+        top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        left: -2.5vh;
+        height: 1vw;
+        font-size: 1.9vh;
+        position: absolute;
+      }
+      #hedaerderayls{
+        color:gray;
+        left: -.9vh;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 1.2vh;
+        width: 15vw;
+        justify-content: flex-start;
+        text-align: left;
+        max-height: 4vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        bottom: -.8vh;
+        position: absolute;
+      }
+      }
+      .sepetdis{
+        width: 16vw;
+        height: 30vh;
+        bottom: 1vh;
+        display:  block;
+        overflow-y: auto;
+        position: absolute;
+      }
+
+      .sepetitems{
+        width: 15.9vw;
+        font-size: small;
+        height: 5vh;
+        left: 0;
+        top: 0;
+        position: relative;
+        margin-bottom: 1vh;
+        border: 1px solid gray;
+        border-radius: .8vh;
+        #itemname{
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          font-size: 1.2vh;
+          position: absolute;
+          left: .5vw;
+        }
+        #sepetitemcount{
+          color: yellowgreen;
+          font-size: small;
+          margin-left: .5vw;
+        }
+
+        #itempara{
+          color: green;
+          font-size: small;
+          margin-left: .6vw;
+        }
+        #itemcountup{
+          background-color: transparent;
+          border: none;
+          font-size: 2vh;
+          position: absolute;
+          right: 3vw;
+          cursor: pointer;
+          i {
+            color: white;
+          }
+        }
+        #itemcountdown{
+          background-color: transparent;
+          border: none;
+          font-size: 2vh;
+          position: absolute;
+          right: 1vw;
+          cursor: pointer;
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .totalmoney{
+        width: 16vw;   
+        height: 3vh;     
+        // background: red;
+        bottom: 8.1vh;
+        right: 4.3vh;
+        // border: 1px solid white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5vh;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: .7vh;
+        color: white;
+        position: absolute;
+
+        p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin-left: .5vw;
+          }
+        }
+      }
+
+      .bankcard{
+        position: absolute;
+        width: 4vw;   
+        height: 3vh;    
+        bottom: 4.3vh;
+        border: 1px solid white;
+        border-radius: .7vh;
+        right: 4vw;
+        cursor: pointer;
+        color: white;
+      }
+
+      .cash{
+        position: absolute;
+        width: 4vw;   
+        height: 3vh;    
+        bottom: 4.3vh;
+        border: 1px solid white;
+        border-radius: .7vh;
+        right: 13vw;
+        cursor: pointer;
+        color: white;
+      }
